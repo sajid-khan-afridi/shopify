@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div className="flex flex-col  overflow-hidden">
       <Collection />
-      <About2 />
+      {/* <About2 /> */}
       {/* <div className="h-[50vh] w-auto bg-white"></div> */}
       {/* <NextSection />
       <div className="h-[50vh] w-auto bg-white"></div> */}

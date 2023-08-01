@@ -1,6 +1,6 @@
 export const slideImages = [
     {
-      src: "/images/1.jpg",
+      src: "/images/7.png",
       alt: "Slide 1",
       text: {
         sub_Header: "TOTES",
