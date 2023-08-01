@@ -8,9 +8,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "../components/styles.css";
+// import "../components/styles.css";
 import Image from "next/image";
 import { slideImages } from "./data";
+import "@/components/styles.css";
 
 const SwiperImages = () => {
   return (
