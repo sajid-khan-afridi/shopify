@@ -4,9 +4,8 @@ import React, { useState } from "react";
 import Wrapper from "@/components/Wrapper";
 import Circle from "@/components/Circle";
 import SubComponent from "@/components/SubComponent";
-import SubComponent4 from "./Subcomponent4";
-import SubComponent3 from "./subComponent3";
-import SubComponent5 from "./SubComponent5";
+import RangeSlider2 from "./RangeSlider2";
+
 // import SubComponent3 from "./subComponent3";
 
 const Filter = () => {
@@ -30,6 +29,7 @@ const Filter = () => {
           "Date, new to old",
         ]}
       />
+      <RangeSlider2 />
     </Wrapper>
   );
 };
