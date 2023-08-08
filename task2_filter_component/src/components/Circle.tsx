@@ -7,7 +7,7 @@ const Circle = () => {
       className="rounded-full w-6 h-6 bg-gray-300 flex justify-center items-center cursor-pointer"
       onClick={() => setShow(!show)}
     >
-      {show ? "✔" : ""}
+      {show ? "✔" :  ""}
     </div>
   );
 };

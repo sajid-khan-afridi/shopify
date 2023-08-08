@@ -4,19 +4,25 @@ import React, { useState } from "react";
 import Wrapper from "@/components/Wrapper";
 import Circle from "@/components/Circle";
 import SubComponent from "@/components/SubComponent";
+import PriceRange from "./priceRange";
+import SortBy from "./sortBy";
 
-// import SubComponent3 from "./subComponent3";
+
+
 
 const Filter = () => {
   return (
     <Wrapper>
-      <SubComponent
+      <SubComponent  //heading 1 
         heading="Availability"
         subHeading={["In stock", "Out of stock"]}
       />
+ 
+      <SubComponent heading="Price" subHeading={null} /> {/*this one is for the price range*/}
+
       <SubComponent heading="Size" subHeading={["COMPACT", "GRANDE", "MIDI"]} />
       <SubComponent heading="Product type" subHeading={["Tote Bag"]} />
-      <SubComponent
+      <SortBy
         heading="Sort by"
         subHeading={[
           "Best selling",
@@ -28,6 +34,10 @@ const Filter = () => {
           "Date, new to old",
         ]}
       />
+
+
+
+
     </Wrapper>
   );
 };

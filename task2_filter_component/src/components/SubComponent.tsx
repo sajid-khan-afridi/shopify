@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Circle from "@/components/Circle";
+import PriceRange from "./priceRange";
 
 interface MyProps {
   heading: string;
-  subHeading: string[];
+  subHeading?: string[] | null;
 }
 
 const SubComponent5 = (props: MyProps) => {
@@ -13,7 +14,7 @@ const SubComponent5 = (props: MyProps) => {
   }
   const divStyles = {
     cursor: "pointer",
-    fontSize: "2rem",
+    fontSize: "1.5rem",
     transform: show ? "rotate(0deg)" : "rotate(180deg)",
     transition: "all 0.3s ease",
   };
@@ -26,23 +27,26 @@ const SubComponent5 = (props: MyProps) => {
     transition: "transform 0.3s ease, opacity 0.3s ease, height 0.3s ease", // Include both transform, opacity, and height properties in the transition
   };
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col border-b border-gray-300">
       <div className="flex justify-between">
         <div className="mt-3">{props.heading}</div>
         <div
           onClick={handleClick}
-          className="cursor-pointer text-3xl focus:rotate-180 delay-300 transition-all ease-in-out duration-500"
+          className=" -mb-1 cursor-pointer text-3xl focus:rotate-180 delay-300 transition-all ease-in-out duration-500"
           style={divStyles}
         >
           {show ? "-" : "+"}
         </div>
       </div>
 
-      <div className="ml-2 mt-1" style={dropdownStyles}>
-        {props.subHeading.map((item) => (
-          <div className="flex mb-2" key={item}>
-            <Circle /> <span className="pl-3">{item}</span>
-          </div>
+      <div className="ml-2 mt-1" style={dropdownStyles} >
+      
+        {props.subHeading==null ? <div className="-ml-2 -mt-4">   <PriceRange />  </div> : <div></div>} 
+        
+        {props.subHeading?.map((item) => (             
+             <div className="flex mb-2" key={item}>                   
+              <Circle /> <span className="pl-3">{item}</span> 
+            </div>
         ))}
       </div>
     </div>

@@ -3,7 +3,7 @@ import React, { FC } from "react";
 const Wrapper: FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     // <div className="max-w-screen-2xl w-full mx-auto mdl:px-20 sm:px-5 overflow-y-hidden">
-    <div className="max-w-sm w-full mx-auto mdl:px-20 sm:px-5 overflow-y-hidden">
+    <div className="max-w-[250px] w-full mx-auto  text-gray-600" >
       {children}
     </div>
   );
