@@ -1,11 +1,13 @@
-
 import Filter from "@/components/Filter";
+import Main from "@/components/Main";
+import CollectionGrid from "@/components/hira";
 
 export default function Home() {
   return (
     <div>
-      <Filter  />
-
+      {/* <CollectionGrid /> */}
+      {/* <Filter /> */}
+      <Main />
     </div>
   );
 }
