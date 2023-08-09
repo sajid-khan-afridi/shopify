@@ -1,10 +1,16 @@
 import React from "react";
+import Filter from "../Filter";
+import CollectionGrid from "../hira";
 
 const Main = () => {
   return (
-    <div className="grid gap-4">
-      <div className="w-[35%] bg-blue-300">Left Div</div>
-      <div className="w-[65%] bg-green-300">Right Div</div>
+    <div className="min-h-screen grid grid-cols-[1fr,3fr] gap-5 mt-10">
+      <div className="p-5 bg-gray-300 ">
+        <Filter />
+      </div>
+      <div className="p-5 bg-gray-300 ">
+        <CollectionGrid />
+      </div>
     </div>
   );
 };

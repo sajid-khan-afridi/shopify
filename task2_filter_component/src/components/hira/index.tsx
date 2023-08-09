@@ -6,7 +6,7 @@ import { collection } from "./constant";
 
 const CollectionGrid = () => {
   return (
-    <div className="flex flex-wrap justify-start gap-4 ">
+    <div className="flex flex-wrap justify-center gap-4 ">
       {collection.map((t) => (
         <Link href={t.link} key={t.title}>
           <div className="text-gray-700 flex flex-col gap-1 cursor-pointer">
@@ -17,8 +17,8 @@ const CollectionGrid = () => {
               <Image
                 src={t.img}
                 alt="bag image"
-                width={300}
-                height={300}
+                width={280}
+                height={280}
                 className=" h-64 object-cover "
               />
             </div>
