@@ -5,7 +5,7 @@ import CollectionGrid from "../hira";
 import "./app.css";
 
 const Main = () => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   function handleClick() {
     setShow(!show);
   }
@@ -26,12 +26,12 @@ const Main = () => {
           show ? "block" : "hidden"
         } absolute bg-white w-full h-full top-0 `}
       >
-        <div className="fixed h-screen overflow-scroll pb-36">
+        <div className="fixed h-screen overflow-scroll pb-36 ">
           <Filter />
         </div>
       </div>
       <div
-        className="w-screen h-20 bg-black text-white bottom-0 text-sm fixed flex justify-center items-center"
+        className="w-screen h-20 bg-black text-white bottom-0 text-sm fixed flex justify-center items-center md:hidden"
         onClick={handleClick}
       >
         SHOW FILTERS
