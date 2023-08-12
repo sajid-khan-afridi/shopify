@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Circle from "@/components/Circle";
 import PriceRange from "./priceRange";
+import { AiOutlinePlus } from "react-icons/ai";
 
 interface MyProps {
   heading: string;
@@ -27,7 +28,7 @@ const SubComponent5 = (props: MyProps) => {
     transition: "transform 0.3s ease, opacity 0.3s ease, height 0.3s ease", // Include both transform, opacity, and height properties in the transition
   };
   return (
-    <div className="flex flex-col border-b border-gray-300">
+    <div className="flex flex-col border-b border-gray-300 max-md:pb-2">
       <div className="flex justify-between">
         <div className="mt-3 text-base ">{props.heading}</div>
         <div
