@@ -6,7 +6,7 @@ import { collection } from "./constant";
 
 const CollectionGrid = () => {
   return (
-    <div className="grid grid-cols-3 max-md:grid-cols-2 justify-center gap-4 ">
+    <div className="grid grid-cols-3 max-md:grid-cols-2 justify-center gap-4 max-md:pb-24">
       {/* <div className="flex flex-wrap justify-center gap-4 "> */}
       {collection.map((t) => (
         <Link href={t.link} key={t.title}>
