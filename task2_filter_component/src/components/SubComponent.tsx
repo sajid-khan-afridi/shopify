@@ -29,7 +29,7 @@ const SubComponent5 = (props: MyProps) => {
   return (
     <div className="flex flex-col border-b border-gray-300">
       <div className="flex justify-between">
-        <div className="my-3 text-base ">{props.heading}</div>
+        <div className="mt-3 text-base ">{props.heading}</div>
         <div
           onClick={handleClick}
           className=" -mb-1 cursor-pointer text-3xl focus:rotate-180 delay-300 transition-all ease-in-out duration-500"
@@ -50,7 +50,7 @@ const SubComponent5 = (props: MyProps) => {
         )}
 
         {props.subHeading?.map((item) => (
-          <div className="flex mb-2" key={item}>
+          <div className="flex my-2" key={item}>
             <Circle /> <span className="pl-3">{item}</span>
           </div>
         ))}
