@@ -4,10 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { collection } from "./constant";
 import { iconComponent } from "@/components/hira/constant";
+import "./styles.css"
 
 const CollectionGrid = () => {
   return (
-    <div className="grid grid-cols-3 max-md:grid-cols-2 justify-center gap-4 max-md:pb-24">
+    <div className="grid grid-cols-3 max-md:grid-cols-2 justify-center gap-8 max-md:pb-24">
       {/* <div className="flex flex-wrap justify-center gap-4 "> */}
       {collection.map((t) => (
         <Link href={t.link} key={t.title}>
@@ -19,7 +20,7 @@ const CollectionGrid = () => {
                   alt="bag image"
                   width={280}
                   height={280}
-                  className=" object-cover h-[350px]"
+                  className=" object-cover h-[350px] max-md:h-[200px]"
                 />
               </div>
               {/* <h1 className="font-medium text-sm">{t.title}</h1>
@@ -50,9 +51,9 @@ const CollectionGrid = () => {
                     return <IconObj key={ind} />;
                   })}
                   <span
-                    className={`ml-4 text-gray-800 text-sm ${
+                    className={`ml-4 text-gray-800 your-element-class text-sm ${
                       t.review ? "block" : "hidden"
-                    }`}
+                    }`} 
                   >
                     {t.review} review
                   </span>
