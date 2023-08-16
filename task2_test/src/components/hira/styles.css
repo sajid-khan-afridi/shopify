@@ -1,5 +1,5 @@
 @media (max-width: 420px) {
-    .your-element-class {
+    .mediaQuery {
       display: none;
     }
   }

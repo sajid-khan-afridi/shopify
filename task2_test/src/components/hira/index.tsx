@@ -51,7 +51,7 @@ const CollectionGrid = () => {
                     return <IconObj key={ind} />;
                   })}
                   <span
-                    className={`ml-4 text-gray-800 your-element-class text-sm ${
+                    className={`ml-4 text-gray-800 mediaQuery text-sm ${
                       t.review ? "block" : "hidden"
                     }`}
                   >
