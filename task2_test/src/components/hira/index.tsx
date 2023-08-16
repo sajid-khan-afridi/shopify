@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { collection } from "./constant";
 import { iconComponent } from "@/components/hira/constant";
-import "./styles.css"
+import "./styles.css";
 
 const CollectionGrid = () => {
   return (
@@ -53,7 +53,7 @@ const CollectionGrid = () => {
                   <span
                     className={`ml-4 text-gray-800 your-element-class text-sm ${
                       t.review ? "block" : "hidden"
-                    }`} 
+                    }`}
                   >
                     {t.review} review
                   </span>
