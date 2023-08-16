@@ -36,7 +36,7 @@ const CollectionGrid = () => {
                   <del
                     className={`text-[#EF9A9A] ${
                       t.disPrice ? "block" : "hidden"
-                    } pr-10`}
+                    } pr-10 max-sm:pr-1`}
                   >
                     ${t.disPrice}
                   </del>
