@@ -1,22 +1,21 @@
 import Filter from "@/components/Filter";
-import Main from "@/components/Main";
+import Main from "@/components/Main/[name]";
 import Hero from "@/components/hero";
 import CollectionGrid from "@/components/hira";
 import Link from "next/link";
+import { collection } from "@/components/hira/constant";
 
 export default function Home() {
   return (
     <div>
       {/* <CollectionGrid /> */}
       {/* <Filter /> */}
-      {/* <Link href="/zia">
-        <Main props={value1} />
+      {/* <Link href="/city">
+        <Main />
       </Link>
-      <br />
-      <Link href="/zeeshan">Go to Zeeshan page</Link>
-      <br />
-      <Link href="/hira">Go to Hira page</Link> */}
-      <Main />
+       */}
+
+      {/* <Main /> */}
     </div>
   );
 }

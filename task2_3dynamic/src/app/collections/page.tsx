@@ -23,7 +23,7 @@ export default async function Home() {
         <div key={item.id} className="flex flex-col gap-y-2 mx-auto">
           <Link href={`/collections/${item.name}`}>
             <Image
-              src={item.bgPic} //Type 'undefined' is not assignable to type 'string | StaticImport'.ts(2322)
+              src={item.bgPic}
               alt="item.alt"
               width={250}
               height={300}
