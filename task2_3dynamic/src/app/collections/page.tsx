@@ -1,21 +1,22 @@
 import purses from "@/components/assets/images/collectionList/purses.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { data } from "@/components/hira/data";
 
 export default async function Home() {
   // const data: IProduct[] = await getData();
   // console.log(data);
-  const data = [
-    {
-      id: 1,
-      name: "purses",
-      bgPic: purses,
-      //https://unsplash.com/photos/4frKet-PJss
-      heading: "Carrie",
-      paragraph:
-        "Explore the new arrivals or bestselling purses from Fablou. New arrivals every week. Explore the new season purses or shop bestsellers.",
-    },
-  ];
+  // const data = [
+  //   {
+  //     id: 1,
+  //     name: "purses",
+  //     bgPic: purses,
+  //     //https://unsplash.com/photos/4frKet-PJss
+  //     heading: "Carrie",
+  //     paragraph:
+  //       "Explore the new arrivals or bestselling purses from Fablou. New arrivals every week. Explore the new season purses or shop bestsellers.",
+  //   },
+  // ];
 
   return (
     <div className="grid sm:grid-cols-1 md:grid-cols-2 mdl:grid-cols-3 justify-center items-center gap-y-8 mt-24">
@@ -31,7 +32,7 @@ export default async function Home() {
             />
             <div className="pdh">{item.name}</div>
             <div className="pdp">{item.heading}</div>
-            <div className="pdh2">${item.paragraph}</div>
+            {/* <div className="pdh2">${item.paragraph}</div> */}
           </Link>
         </div>
       ))}
