@@ -8,11 +8,19 @@ import bag7 from "@/components/assets/images/Collectiongrid/bag7.jpg";
 import bag8 from "@/components/assets/images/Collectiongrid/bag8.jpg";
 import bag9 from "@/components/assets/images/Collectiongrid/bag9.jpg";
 import bag10 from "@/components/assets/images/Collectiongrid/bag10.jpg";
+import { IconType } from "react-icons";
+import { GrStar } from "react-icons/gr";
+
 
 
 import purses from "@/components/assets/images/collectionList/purses.jpg";
 import clearance from "@/components/assets/images/collectionList/clearance.jpg"
 import llchelsea from "@/components/assets/images/collectionList/llchelsea.jpg"
+
+export const iconComponent: { [key: string]: IconType } = {
+  GrStar,
+};
+
 
 export const data = [
     {

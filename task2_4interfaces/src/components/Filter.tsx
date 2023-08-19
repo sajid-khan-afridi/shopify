@@ -7,19 +7,16 @@ import SubComponent from "@/components/SubComponent";
 import PriceRange from "./priceRange";
 import SortBy from "./sortBy";
 
-
-
-
 const Filter = () => {
   return (
-    <Wrapper>
-      <SubComponent  //heading 1 
+    <div className="max-w-[250px] w-full mx-auto  text-gray-600 max-md:w-screen max-md:max-w-full max-md:px-6">
+      {/*Wrapper*/}
+      <SubComponent //heading 1
         heading="Availability"
         subHeading={["In stock", "Out of stock"]}
       />
- 
-      <SubComponent heading="Price" subHeading={null} /> {/*this one is for the price range*/}
-
+      <SubComponent heading="Price" subHeading={null} />{" "}
+      {/*this one is for the price range*/}
       <SubComponent heading="Size" subHeading={["COMPACT", "GRANDE", "MIDI"]} />
       <SubComponent heading="Product type" subHeading={["Tote Bag"]} />
       <SortBy
@@ -34,11 +31,7 @@ const Filter = () => {
           "Date, new to old",
         ]}
       />
-
-
-
-
-    </Wrapper>
+    </div>
   );
 };
 

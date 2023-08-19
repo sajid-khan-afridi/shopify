@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Filter from "@/components/Filter";
 import CollectionGrid from "@/components/hira";
 import "./app.css";
-import Wrapper2 from "@/components/Wrapper2";
 import Hero from "@/components/hero";
 
 const Main = ({ params }: { params: { name: string } }) => {
@@ -17,9 +16,10 @@ const Main = ({ params }: { params: { name: string } }) => {
   const param = params.name;
   console.log(param);
   return (
-    <Wrapper2>
+    <div className="max-w-screen-2xl w-full mx-auto  text-gray-600">
+      {/*Wrapper*/}
       <div className="col-span-2">
-        <Hero subUrl={param}/>
+        <Hero subUrl={param} />
       </div>
       <div className="min-h-screen grid grid-cols-[1fr,3fr] gap-5 mt-10 relative">
         <div className="p-5 max-h-[800px] max-md:hidden">
@@ -29,7 +29,7 @@ const Main = ({ params }: { params: { name: string } }) => {
           className="p-5 max-h-[800px] overflow-scroll no-scrollbar max-md:w-screen"
           style={{ scrollbarWidth: "none" }}
         >
-          <CollectionGrid subUrl={param}/>
+          <CollectionGrid subUrl={param} />
         </div>
       </div>
       <div
@@ -47,7 +47,7 @@ const Main = ({ params }: { params: { name: string } }) => {
       >
         {filterbutton}
       </div>
-    </Wrapper2>
+    </div>
   );
 };
 

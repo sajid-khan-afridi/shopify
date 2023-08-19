@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Circle from "@/components/Circle";
 import PriceRange from "./priceRange";
-import { AiOutlinePlus } from "react-icons/ai";
 
 interface MyProps {
   heading: string;
