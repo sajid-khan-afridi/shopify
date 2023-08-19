@@ -5,12 +5,23 @@ import Link from "next/link";
 import { collection } from "./constant";
 import { iconComponent } from "@/components/hira/constant";
 import "./styles.css";
+import { data } from "@/components/hira/data";
 
-const CollectionGrid = () => {
+interface SubUrl {
+  subUrl: string;
+}
+
+const CollectionGrid = (prop: SubUrl) => {
+  const { subUrl } = prop;
+  // console.log("prop", subUrl);
+
+  const arr = data.filter((name) => name.name === subUrl);
+  const obj = arr[0];
+  console.log(obj);
   return (
     <div className="grid grid-cols-3 max-md:grid-cols-2 justify-center gap-8 max-md:pb-24">
       {/* <div className="flex flex-wrap justify-center gap-4 "> */}
-      {collection.map((t) => (
+      {obj.subData.map((t) => (
         <Link href={t.link} key={t.title}>
           <div className="bg-[#f4f4f4] shadow-lg">
             <div className="relative overflow-hidden group">

@@ -1,4 +1,3 @@
-import purses from "@/components/assets/images/collectionList/purses.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { data } from "@/components/hira/data";

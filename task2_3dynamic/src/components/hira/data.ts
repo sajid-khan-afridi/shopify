@@ -12,6 +12,8 @@ import bag10 from "@/components/assets/images/Collectiongrid/bag10.jpg";
 
 import purses from "@/components/assets/images/collectionList/purses.jpg";
 import clearance from "@/components/assets/images/collectionList/clearance.jpg"
+import llchelsea from "@/components/assets/images/collectionList/llchelsea.jpg"
+
 export const data = [
     {
       id: 1,
@@ -19,10 +21,11 @@ export const data = [
       bgPic: purses,
       //https://unsplash.com/photos/4frKet-PJss
       heading: "Carrie",
+      paragraph:"Explore the new arrivals or bestselling purses from Fablou. New arrivals every week. Explore the new season purses or shop bestsellers.",
       subData:[
         {
           img: bag5,
-          title: "Carrie-Frapp",
+          title: "Carrie-Frapp1",
           hoverimage: bag7,
           link: "/",
           // new: "$45.00",
@@ -121,10 +124,116 @@ export const data = [
       bgPic: clearance,
       //https://unsplash.com/photos/4frKet-PJss
       heading: "Clearance",
+      paragraph:"",
       subData:[
         {
           img: bag5,
-          title: "Carrie-Frapp",
+          title: "Carrie-Frapp2",
+          hoverimage: bag7,
+          link: "/",
+          // new: "$45.00",
+          // old: "$55.00",
+          // title: "City - All Black",
+          price: 89,
+          disPrice: 99,
+          icon: ["GrStar", "GrStar", "GrStar", "GrStar", "GrStar"],
+          color: "#EF9A9A",
+          review: 2,
+          sale: "sale",
+          
+        },
+        {
+          img: bag6,
+          title: "Carrie-Blush",
+          hoverimage: bag10,
+          link: "/",
+          // new: "$55.00",
+          price: 89,
+          disPrice: 99,
+          icon: ["GrStar", "GrStar", "GrStar", "GrStar", "GrStar"],
+          color: "#334155",
+          review: 0,
+        },
+        {
+          img: bag7,
+          title: "Carrie-Berrie",
+          hoverimage: bag5,
+          link: "/",
+          // new: "$55.00",
+          price: 89,
+          disPrice: 99,
+          icon: ["GrStar", "GrStar", "GrStar", "GrStar", "GrStar"],
+          color: "#334155",
+          review: 0,
+          sale: "sale",
+        },
+        {
+          img: bag8,
+          title: "Carrie-Steel",
+          hoverimage: bag4,
+          link: "/",
+          // new: "$55.00",
+          price: 89,
+          disPrice: 99,
+          icon: ["GrStar", "GrStar", "GrStar", "GrStar", "GrStar"],
+          color: "#EF9A9A",
+          review: 3,
+          sale: "sold out",
+        },
+        {
+          img: bag2,
+          title: "Carrie-All Black",
+          hoverimage: bag3,
+          link: "/",
+          // new: "$55.00",
+          price: 89,
+          disPrice: 99,
+          icon: ["GrStar", "GrStar", "GrStar", "GrStar", "GrStar"],
+          color: "#334155",
+          review: 0,
+        },
+        {
+          img: bag8,
+          title: "Carrie-Navy",
+          hoverimage: bag4,
+          link: "/",
+          // new: "$45.00",
+          // old: "$55.00",
+          price: 89,
+          disPrice: 99,
+          icon: ["GrStar", "GrStar", "GrStar", "GrStar", "GrStar"],
+          color: "#334155",
+          review: 0,
+          sale: "sold out",
+        },
+        {
+          img: bag1,
+          title: "Carrie-Sol",
+          hoverimage: bag2,
+          link: "/",
+          // new: "$45.00",
+          // old: "$55.00",
+          price: 89,
+          disPrice: 99,
+          icon: ["GrStar", "GrStar", "GrStar", "GrStar", "GrStar"],
+          color: "#334155",
+          review: 0,
+        },
+      ],
+    },
+
+    // 3
+    {
+      id: 3,
+      name: "ll-chelsea",
+      bgPic: llchelsea,
+      //https://unsplash.com/photos/4frKet-PJss
+      heading: "LL Chelsea",
+      paragraph:"",
+      subData:[
+        {
+          img: bag5,
+          title: "Carrie-Frapp3",
           hoverimage: bag7,
           link: "/",
           // new: "$45.00",

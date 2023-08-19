@@ -14,12 +14,12 @@ const Main = ({ params }: { params: { name: string } }) => {
   }
 
   const filterbutton = show ? "CLOSE FILTERS" : "SHOW FILTERS";
-  const recieve = params.name;
-  console.log(recieve);
+  const param = params.name;
+  console.log(param);
   return (
     <Wrapper2>
       <div className="col-span-2">
-        <Hero />
+        <Hero subUrl={param}/>
       </div>
       <div className="min-h-screen grid grid-cols-[1fr,3fr] gap-5 mt-10 relative">
         <div className="p-5 max-h-[800px] max-md:hidden">
@@ -29,7 +29,7 @@ const Main = ({ params }: { params: { name: string } }) => {
           className="p-5 max-h-[800px] overflow-scroll no-scrollbar max-md:w-screen"
           style={{ scrollbarWidth: "none" }}
         >
-          <CollectionGrid />
+          <CollectionGrid subUrl={param}/>
         </div>
       </div>
       <div
