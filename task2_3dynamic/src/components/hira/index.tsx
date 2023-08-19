@@ -70,6 +70,18 @@ const CollectionGrid = (prop: SubUrl) => {
                   </span>
                 </p>
               </div>
+              {/*  */}
+              <span
+                className={`absolute left-5 top-5 ${
+                  t.sale === "sale"
+                    ? "bg-[#EF9A9A] text-gray-800"
+                    : "bg-black/75 text-[#efefef]"
+                }  md:px-3 md:py-2 p-[6px] group-hover:opacity-0 md:text-[16px] text-[12px] uppercase ${
+                  t.sale ? "block" : "hidden"
+                }`}
+              >
+                {t.sale}
+              </span>
             </div>
           </div>
         </Link>
