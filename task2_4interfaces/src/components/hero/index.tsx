@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { data } from "@/components/hira/data";
+import { data } from "@/components/productList/data";
 
 const Hero = (prop: { subUrl: string }) => {
   const { subUrl } = prop;

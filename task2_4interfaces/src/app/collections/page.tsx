@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { data } from "@/components/hira/data";
+import { data } from "@/components/productList/data";
 
 export default async function Home() {
   return (

@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { iconComponent } from "@/components/hira/data";
+import { iconComponent } from "@/components/productList/data";
 import "./styles.css";
-import { data } from "@/components/hira/data";
+import { data } from "@/components/productList/data";
 
 interface SubUrl {
   subUrl: string;

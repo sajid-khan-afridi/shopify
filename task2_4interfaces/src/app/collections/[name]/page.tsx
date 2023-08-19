@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Filter from "@/components/Filter";
-import CollectionGrid from "@/components/hira";
+import CollectionGrid from "@/components/productList";
 import "./app.css";
 import Hero from "@/components/hero";
 
@@ -14,7 +14,6 @@ const Main = ({ params }: { params: { name: string } }) => {
 
   const filterbutton = show ? "CLOSE FILTERS" : "SHOW FILTERS";
   const param = params.name;
-  console.log(param);
   return (
     <div className="max-w-screen-2xl w-full mx-auto  text-gray-600">
       {/*Wrapper*/}
