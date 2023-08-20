@@ -24,12 +24,13 @@ export const iconComponent: { [key: string]: IconType } = {
 
 export const data = [
     {
-      id: 1,
+     
       name: "purses",
       bgPic: purses,
       //https://unsplash.com/photos/4frKet-PJss
       heading: "Carrie",
       paragraph:"Explore the new arrivals or bestselling purses from Fablou. New arrivals every week. Explore the new season purses or shop bestsellers.",
+      quantity:6,
       subData:[
         {
           img: bag5,
@@ -127,12 +128,13 @@ export const data = [
       ],
     },
     {
-      id: 2,
+      
       name: "Clearance",
       bgPic: clearance,
       //https://unsplash.com/photos/4frKet-PJss
       heading: "Clearance",
       paragraph:"",
+      quantity:12,
       subData:[
         {
           img: bag5,
@@ -232,12 +234,13 @@ export const data = [
 
     // 3
     {
-      id: 3,
+      
       name: "ll-chelsea",
       bgPic: llchelsea,
       //https://unsplash.com/photos/4frKet-PJss
       heading: "LL Chelsea",
       paragraph:"",
+      quantity:10,
       subData:[
         {
           img: bag5,
